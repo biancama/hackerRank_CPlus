@@ -20,4 +20,4 @@ set(CMAKE_CXX_STANDARD 11)
 #add_subdirectory(algorithms/contests/week26/satisfactoryPairs)
 #add_subdirectory(algorithms/implementation/formingMagicSquare)
 
-add_executable(hackerRank main.cpp interview_preparation_kit/dynamic_programming/max_array_sum/Tests.cpp interview_preparation_kit/dynamic_programming/max_array_sum/Solution.cpp)
+add_executable(hackerRank main.cpp interview_preparation_kit/dynamic_programming/max_array_sum/Tests.cpp interview_preparation_kit/dynamic_programming/max_array_sum/Solution.cpp interview_preparation_kit/dynamic_programming/abbbreviation/Tests.cpp interview_preparation_kit/dynamic_programming/abbbreviation/Solution.cpp)
