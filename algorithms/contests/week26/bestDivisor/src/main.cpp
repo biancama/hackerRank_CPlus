@@ -19,7 +19,7 @@ void fillDivisors(unsigned int n, vector<Elem>& divisors);
 
 unsigned int digit_sum(int number);
 
-void solution() {
+void best_divisor_solution() {
     unsigned int n;
     vector<Elem> divisors;
 

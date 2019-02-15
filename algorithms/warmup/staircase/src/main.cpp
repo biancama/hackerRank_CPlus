@@ -9,7 +9,7 @@
 
 using namespace std;
 
-void solution() {
+void staircase_solution() {
     int n;
     cin >> n;
     for(int i = 0; i < n; i++) {

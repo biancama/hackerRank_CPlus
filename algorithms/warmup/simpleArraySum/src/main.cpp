@@ -8,7 +8,7 @@
 using namespace std;
 
 
-void solution() {
+void simple_array_sum_solution() {
     int n;
     int sum = 0;
     cin >> n;

@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void solution() {
+void kangaroo_solution() {
     unsigned int x_1, x_2, v_1, v_2;
 
 

@@ -5,19 +5,19 @@
 #include <iostream>
 #include <string>
 
-unsigned int check(int a, int b, int n);
+unsigned int satisfactory_check(int a, int b, int n);
 
 using namespace std;
 unsigned int gcd(unsigned int a, unsigned int b) {
     return b == 0 ? a : gcd(b, a % b);
 }
-void solution() {
+void satisfactory_solution() {
     unsigned int n, result = 0;
 
     cin >> n ;
     for (int a = 1; a < n ; ++a) {
         for (int b = a + 1; b <= n - a ; ++b) {
-            result += check(a, b, n);
+            result += satisfactory_check(a, b, n);
         }
     }
 
@@ -37,7 +37,7 @@ unsigned int check(unsigned int a, unsigned int b, unsigned int n) {
 */
 
 
-unsigned int check(int a, int b, int n) {
+unsigned int satisfactory_check(int a, int b, int n) {
     int x1, y1, x2, y2;
     if (n % a == 0) {
         x1 = n / a;

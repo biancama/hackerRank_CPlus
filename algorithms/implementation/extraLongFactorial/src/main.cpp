@@ -9,7 +9,7 @@ using namespace std;
 
 string long_fact(int n);
 
-void solution() {
+void extra_long_factorial_solution() {
     int n;
     cin >> n;
     string result = long_fact(n);

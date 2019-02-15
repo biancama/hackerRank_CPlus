@@ -7,7 +7,7 @@
 #include <iostream>
 using namespace std;
 
-void solution() {
+void diagonal_difference_solution() {
     int n;
     cin >> n;
     int sum =0;

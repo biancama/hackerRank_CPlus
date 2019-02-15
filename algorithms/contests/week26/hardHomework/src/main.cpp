@@ -11,7 +11,7 @@ unsigned int check(int a, int b);
 using namespace std;
 
 
-void solution() {
+void hard_home_work_solution() {
     unsigned int n;
     double result = -3.0;
     int x = 1, y =1, z= 1;

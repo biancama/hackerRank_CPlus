@@ -2,37 +2,39 @@
 // Created by Massimo Biancalani on 23/09/16.
 //
 #include <gtest/gtest.h>
-#include "main.cpp"
+
 using std::string;
-TEST(test_check, test01) {
+void queen_attack_solution();
+
+TEST(queen_attack_check, test01) {
 std::streambuf* orig = std::cin.rdbuf();
 std::istringstream input("4 0\n4 4\n");
 std::cin.rdbuf(input.rdbuf());
 
 // tests go here
 testing::internal::CaptureStdout();
-solution();
+    queen_attack_solution();
 string output = testing::internal::GetCapturedStdout();
 string expectedOutput = "9";
 
 std::cin.rdbuf(orig);
 EXPECT_STREQ(expectedOutput.c_str(), output.c_str());
 }
-TEST(test_check, test02) {
+TEST(queen_attack_check, test02) {
     std::streambuf* orig = std::cin.rdbuf();
     std::istringstream input("5 3\n4 3\n5 5\n4 2\n2 3\n");
     std::cin.rdbuf(input.rdbuf());
 
 // tests go here
     testing::internal::CaptureStdout();
-    solution();
+    queen_attack_solution();
     string output = testing::internal::GetCapturedStdout();
     string expectedOutput = "10";
 
     std::cin.rdbuf(orig);
     EXPECT_STREQ(expectedOutput.c_str(), output.c_str());
 }
-TEST(test_check, test03) {
+TEST(queen_attack_check, test03) {
     std::streambuf* orig = std::cin.rdbuf();
     std::istringstream input("100 100\n"
                                      "54 30\n"
@@ -140,14 +142,14 @@ TEST(test_check, test03) {
 
 // tests go here
     testing::internal::CaptureStdout();
-    solution();
+    queen_attack_solution();
     string output = testing::internal::GetCapturedStdout();
     string expectedOutput = "62";
 
     std::cin.rdbuf(orig);
     EXPECT_STREQ(expectedOutput.c_str(), output.c_str());
 }
-TEST(test_check, test04) {
+TEST(queen_attack_check, test04) {
     std::streambuf* orig = std::cin.rdbuf();
     std::istringstream input("100 100\n"
                                      "48 81\n"
@@ -255,7 +257,7 @@ TEST(test_check, test04) {
 
 // tests go here
     testing::internal::CaptureStdout();
-    solution();
+    queen_attack_solution();
     string output = testing::internal::GetCapturedStdout();
     string expectedOutput = "40";
 

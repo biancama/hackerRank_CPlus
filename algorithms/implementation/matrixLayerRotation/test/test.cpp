@@ -3,8 +3,9 @@
 //
 #include <gtest/gtest.h>
 #include <string>
-#include "main.cpp"
+
 using std::string;
-TEST(test_check, test01) {
+void matrix_layer_solution();
+TEST(matrix_layer_check, test01) {
 
 }

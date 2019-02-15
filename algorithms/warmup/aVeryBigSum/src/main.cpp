@@ -7,7 +7,7 @@
 #include <iostream>
 using namespace std;
 
-void solution() {
+void a_very_big_sum_solution() {
     int n;
     long sum = 0;
     cin >> n;

@@ -25,7 +25,7 @@ pair<int, int> max_max_pair(pair<int, int> limit, pair<int, int> obstacle);
 pair<int, int> min_max_pair(pair<int, int> limit, pair<int, int> obstacle);
 
 
-void solution() {
+void queen_attack_solution() {
     int n;
     int k;
 

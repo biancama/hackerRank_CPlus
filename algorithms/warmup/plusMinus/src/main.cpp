@@ -9,7 +9,7 @@
 
 using namespace std;
 
-void solution() {
+void plus_minus_solution() {
     int n;
     int pos_num = 0, neg_num = 0, zeros_num = 0;
     cin >> n;

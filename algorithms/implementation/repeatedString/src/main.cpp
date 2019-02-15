@@ -19,7 +19,7 @@ unsigned long countAInString(const string& stringWithA, unsigned long trimLimit)
     return result;
 }
 
-void solution() {
+void repeated_string_solution() {
     string s;
     unsigned long n;
     cin >> s;

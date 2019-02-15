@@ -8,7 +8,7 @@
 #include <algorithm>
 using namespace std;
 
-void solution() {
+void matrix_layer_solution() {
     int m,n, r, min_row_col;
     cin >> m >> n >> r;
     min_row_col = min (m, n);

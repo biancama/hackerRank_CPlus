@@ -8,7 +8,7 @@
 
 using namespace std;
 
-void solution() {
+void music_in_the_street_solution() {
     unsigned int n, m, h_min, h_max, m_temp, index;
     vector<int> a;
     int result=0;

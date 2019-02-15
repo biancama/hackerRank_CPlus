@@ -3,9 +3,9 @@
 //
 #include <gtest/gtest.h>
 #include <string>
-#include "main.cpp"
 using std::string;
-TEST(test_check, test01) {
+void music_in_the_street_solution();
+TEST(music_in_the_street_check, test01) {
 std::streambuf* orig = std::cin.rdbuf();
 std::istringstream input("2\n"
                                  "1 3\n"
@@ -14,7 +14,7 @@ std::cin.rdbuf(input.rdbuf());
 
 // tests go here
 testing::internal::CaptureStdout();
-solution();
+    music_in_the_street_solution();
 string output = testing::internal::GetCapturedStdout();
 string expectedOutput = "-2";
 
@@ -23,7 +23,7 @@ EXPECT_STREQ(expectedOutput.c_str(), output.c_str());
 }
 
 
-TEST(test_check, test02) {
+TEST(music_in_the_street_check, test02) {
     std::streambuf* orig = std::cin.rdbuf();
     std::istringstream input("5\n"
                                      "1 2 3 5 8\n"
@@ -32,7 +32,7 @@ TEST(test_check, test02) {
 
 // tests go here
     testing::internal::CaptureStdout();
-    solution();
+    music_in_the_street_solution();
     string output = testing::internal::GetCapturedStdout();
     string expectedOutput = "3";
 

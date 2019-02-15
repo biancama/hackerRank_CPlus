@@ -12,7 +12,7 @@ using namespace std;
 
 void calculate_primes(vector<unsigned int>& v, unsigned int low, unsigned int high);
 
-void solution() {
+void twins_solution() {
     unsigned int n, m, result = 0, lst = -1;
     vector<unsigned int> primes;
     cin >> n >> m ;

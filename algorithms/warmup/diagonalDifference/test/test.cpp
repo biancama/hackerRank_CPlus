@@ -3,9 +3,11 @@
 //
 #include "gtest/gtest.h"
 #include <string>
-#include "main.cpp"
+
 using std::string;
-TEST(test_check, test01) {
+void diagonal_difference_solution();
+
+TEST(diagonal_difference_difference, test01) {
 std::streambuf* orig = std::cin.rdbuf();
 std::istringstream input("3\n"
                                  "11 2 4\n"
@@ -15,7 +17,7 @@ std::cin.rdbuf(input.rdbuf());
 
 // tests go here
 testing::internal::CaptureStdout();
-solution();
+    diagonal_difference_solution();
 string output = testing::internal::GetCapturedStdout();
 string expectedOutput = "15\n";
 

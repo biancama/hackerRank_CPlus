@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void solution() {
+void army_game_solution() {
     unsigned int n, m, factor_n = 0, factor_m;
 
 

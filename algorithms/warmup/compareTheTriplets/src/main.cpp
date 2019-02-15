@@ -14,7 +14,7 @@ void add_point (int a, int b, int& a_point, int& b_point ) {
     }
 }
 
-void solution() {
+void compare_the_triplets_solution() {
     int a0;
     int a1;
     int a2;

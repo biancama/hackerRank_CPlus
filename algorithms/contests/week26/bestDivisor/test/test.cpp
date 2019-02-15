@@ -3,16 +3,17 @@
 //
 #include <gtest/gtest.h>
 #include <string>
-#include "main.cpp"
 using std::string;
-TEST(test_check, test01) {
+
+void best_divisor_solution();
+TEST(best_divisor_check, test01) {
 std::streambuf* orig = std::cin.rdbuf();
 std::istringstream input("12\n");
 std::cin.rdbuf(input.rdbuf());
 
 // tests go here
 testing::internal::CaptureStdout();
-solution();
+    best_divisor_solution();
 string output = testing::internal::GetCapturedStdout();
 string expectedOutput = "6";
 
@@ -21,14 +22,14 @@ EXPECT_STREQ(expectedOutput.c_str(), output.c_str());
 }
 
 
-TEST(test_check, test02) {
+TEST(best_divisor_check, test02) {
     std::streambuf* orig = std::cin.rdbuf();
     std::istringstream input("47\n");
     std::cin.rdbuf(input.rdbuf());
 
 // tests go here
     testing::internal::CaptureStdout();
-    solution();
+    best_divisor_solution();
     string output = testing::internal::GetCapturedStdout();
     string expectedOutput = "47";
 
@@ -36,14 +37,14 @@ TEST(test_check, test02) {
     EXPECT_STREQ(expectedOutput.c_str(), output.c_str());
 }
 
-TEST(test_check, test03) {
+TEST(best_divisor_check, test03) {
     std::streambuf* orig = std::cin.rdbuf();
     std::istringstream input("104\n");
     std::cin.rdbuf(input.rdbuf());
 
 // tests go here
     testing::internal::CaptureStdout();
-    solution();
+    best_divisor_solution();
     string output = testing::internal::GetCapturedStdout();
     string expectedOutput = "8";
 
@@ -51,14 +52,14 @@ TEST(test_check, test03) {
     EXPECT_STREQ(expectedOutput.c_str(), output.c_str());
 }
 
-TEST(test_check, test04) {
+TEST(best_divisor_check, test04) {
     std::streambuf* orig = std::cin.rdbuf();
     std::istringstream input("1\n");
     std::cin.rdbuf(input.rdbuf());
 
 // tests go here
     testing::internal::CaptureStdout();
-    solution();
+    best_divisor_solution();
     string output = testing::internal::GetCapturedStdout();
     string expectedOutput = "1";
 
@@ -66,14 +67,14 @@ TEST(test_check, test04) {
     EXPECT_STREQ(expectedOutput.c_str(), output.c_str());
 }
 
-TEST(test_check, test05) {
+TEST(best_divisor_check, test05) {
     std::streambuf* orig = std::cin.rdbuf();
     std::istringstream input("0\n");
     std::cin.rdbuf(input.rdbuf());
 
 // tests go here
     testing::internal::CaptureStdout();
-    solution();
+    best_divisor_solution();
     string output = testing::internal::GetCapturedStdout();
     string expectedOutput = "0";
 
@@ -81,14 +82,14 @@ TEST(test_check, test05) {
     EXPECT_STREQ(expectedOutput.c_str(), output.c_str());
 }
 
-TEST(test_check, test06) {
+TEST(best_divisor_check, test06) {
     std::streambuf* orig = std::cin.rdbuf();
     std::istringstream input("15432\n");
     std::cin.rdbuf(input.rdbuf());
 
 // tests go here
     testing::internal::CaptureStdout();
-    solution();
+    best_divisor_solution();
     string output = testing::internal::GetCapturedStdout();
     string expectedOutput = "3858";
 

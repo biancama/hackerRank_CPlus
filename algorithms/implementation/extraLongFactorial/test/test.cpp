@@ -3,16 +3,18 @@
 //
 #include <gtest/gtest.h>
 #include <string>
-#include "main.cpp"
+
 using std::string;
-TEST(test_check, test01) {
+
+void extra_long_factorial_solution();
+TEST(extra_long_check, test01) {
 std::streambuf* orig = std::cin.rdbuf();
 std::istringstream input("25\n");
 std::cin.rdbuf(input.rdbuf());
 
 // tests go here
 testing::internal::CaptureStdout();
-solution();
+    extra_long_factorial_solution();
 string output = testing::internal::GetCapturedStdout();
 string expectedOutput = "15511210043330985984000000";
 
@@ -21,14 +23,14 @@ EXPECT_STREQ(expectedOutput.c_str(), output.c_str());
 }
 
 
-TEST(test_check, test02) {
+TEST(extra_long_check, test02) {
     std::streambuf* orig = std::cin.rdbuf();
     std::istringstream input("5\n");
     std::cin.rdbuf(input.rdbuf());
 
 // tests go here
     testing::internal::CaptureStdout();
-    solution();
+    extra_long_factorial_solution();
     string output = testing::internal::GetCapturedStdout();
     string expectedOutput = "120";
 
@@ -37,14 +39,14 @@ TEST(test_check, test02) {
 }
 
 
-TEST(test_check, test07) {
+TEST(extra_long_check, test07) {
     std::streambuf* orig = std::cin.rdbuf();
     std::istringstream input("7\n");
     std::cin.rdbuf(input.rdbuf());
 
 // tests go here
     testing::internal::CaptureStdout();
-    solution();
+    extra_long_factorial_solution();
     string output = testing::internal::GetCapturedStdout();
     string expectedOutput = "5040";
 
@@ -52,14 +54,14 @@ TEST(test_check, test07) {
     EXPECT_STREQ(expectedOutput.c_str(), output.c_str());
 }
 
-TEST(test_check, test08) {
+TEST(extra_long_check, test08) {
     std::streambuf* orig = std::cin.rdbuf();
     std::istringstream input("8\n");
     std::cin.rdbuf(input.rdbuf());
 
 // tests go here
     testing::internal::CaptureStdout();
-    solution();
+    extra_long_factorial_solution();
     string output = testing::internal::GetCapturedStdout();
     string expectedOutput = "40320";
 
@@ -67,14 +69,14 @@ TEST(test_check, test08) {
     EXPECT_STREQ(expectedOutput.c_str(), output.c_str());
 }
 
-TEST(test_check, test09) {
+TEST(extra_long_check, test09) {
     std::streambuf* orig = std::cin.rdbuf();
     std::istringstream input("37\n");
     std::cin.rdbuf(input.rdbuf());
 
 // tests go here
     testing::internal::CaptureStdout();
-    solution();
+    extra_long_factorial_solution();
     string output = testing::internal::GetCapturedStdout();
     string expectedOutput = "13763753091226345046315979581580902400000000";
 
