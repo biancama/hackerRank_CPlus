@@ -52,7 +52,7 @@ add_executable(hackerRank_CPlus
         interview_preparation_kit/dynamic_programming/max_array_sum/Solution.cpp
         interview_preparation_kit/dynamic_programming/max_array_sum/Tests.cpp
         catch.hpp
-        main.cpp algorithms/gameTheory/gamesOfStones/Tests.cpp algorithms/gameTheory/gamesOfStones/Solution.cpp)
+        main.cpp algorithms/gameTheory/gamesOfStones/Tests.cpp algorithms/gameTheory/gamesOfStones/Solution.cpp algorithms/warmup/sockMerchant/Tests.cpp algorithms/warmup/sockMerchant/Solution.cpp)
 
 add_dependencies(hackerRank_CPlus gtest)
 target_link_libraries(hackerRank_CPlus /usr/local/lib/libgtest.a)

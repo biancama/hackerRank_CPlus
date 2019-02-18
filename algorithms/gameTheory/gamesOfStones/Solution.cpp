@@ -5,7 +5,12 @@
 #include <vector>
 
 using namespace std;
-
+/**
+ * https://www.hackerrank.com/challenges/game-of-stones-1/problem
+ * 
+ * @param n
+ * @return
+ */
 string gameOfStones(int n) {
     vector<bool> firstWinning(n + 1);
     firstWinning[0] = false;
@@ -27,9 +32,5 @@ string gameOfStones(int n) {
        }
 
     }
-
-
-
     return firstWinning[n] ? "First" : "Second";
-
 }
